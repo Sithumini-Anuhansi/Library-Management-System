@@ -1,0 +1,28 @@
+## Visual Studio / .NET Framework ignores
+
+# Build results
+[Bb]in/
+[Oo]bj/
+
+# Visual Studio cache/options
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Crystal Reports temp
+*.rpt.data
+
+# NuGet
+packages/
+*.nupkg
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Publish/Deploy
+publish/
+*.publishsettings
