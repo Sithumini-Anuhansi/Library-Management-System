@@ -20,12 +20,6 @@ a reduced menu (view books, member lending report only).
 * SQL Server (via `System.Data.SqlClient`, parameterized queries)
 * SAP Crystal Reports for Visual Studio (report design + viewer)
 
----
-
-<div align="right">
-<img src="https://visitor-badge.laobi.icu/badge?page_id=Sithumini-Anuhansi.Library-Management-System&left_text=Views"/>
-</div>
-
 ## Project structure
 
 ```
@@ -46,9 +40,10 @@ LibraryManagementSystem/
 
 1. **Prerequisites**
 
-   * Visual Studio 2019/2022 with the ".NET desktop development" workload
-   * SQL Server / SQL Server Express
-   * [SAP Crystal Reports runtime for Visual Studio](https://help.sap.com/crystal-reports) (needed to open/build the `\*CrystalReport` designer files)
+* Visual Studio 2019/2022 with the ".NET desktop development" workload
+* SQL Server / SQL Server Express
+* [SAP Crystal Reports runtime for Visual Studio](https://help.sap.com/crystal-reports) (needed to open/build the `\*CrystalReport` designer files)
+
 2. **Database**
 
    * Create a database named `LibraryManagementSystem`.
@@ -69,16 +64,15 @@ LibraryManagementSystem/
          Author VARCHAR(100)
      );
      -- plus tables for authors and lending records used by AddAuthors.cs / BookLending.cs
-     ```
+```
 
-   * Update the connection string in each form (currently hardcoded, e.g. in `Login.cs`
-and `Add Books.cs`) to point at your own SQL Server instance:
+* Update the connection string in each form (currently hardcoded, e.g. in `Login.cs` and `Add Books.cs`) to point at your own SQL Server instance:
 
 ```csharp
-     string cs = @"Data Source = YOUR\_SERVER\\SQLEXPRESS; Initial Catalog=LibraryManagementSystem; Integrated Security=True";
-     ```
+string cs = @"Data Source = YOUR\_SERVER\\SQLEXPRESS; Initial Catalog=LibraryManagementSystem; Integrated Security=True";
+```
 
-     Ideally, move this into `App.config` and read it via `ConfigurationManager` instead
+Ideally, move this into `App.config` and read it via `ConfigurationManager` instead
 of duplicating it per form.
 
 3. **Run**
@@ -94,7 +88,19 @@ of duplicating it per form.
 * No `.gitignore` originally — `bin/`/`obj/` build output has been excluded going forward.
 * Direct SQL calls in code-behind, no separation into a data-access/service layer.
 
-## License
+---
 
-Coursework project — add a license here if you intend to make this reusable.
+## Author
 
+**Sithumini Anuhansi**
+
+Software Engineering Undergraduate (NIBM)
+
+[![Email](https://img.shields.io/badge/Email-D14836?style=flat&logo=gmail&logoColor=white)](mailto:anuhansisithumini@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sithumini-anuhansi-5b32a8334)
+
+---
+
+<div align="right">
+<img src="https://visitor-badge.laobi.icu/badge?page_id=Sithumini-Anuhansi.Library-Management-System&left_text=Views"/>
+</div>
