@@ -20,6 +20,12 @@ a reduced menu (view books, member lending report only).
 * SQL Server (via `System.Data.SqlClient`, parameterized queries)
 * SAP Crystal Reports for Visual Studio (report design + viewer)
 
+---
+
+<div align="right">
+<img src="https://visitor-badge.laobi.icu/badge?page_id=Sithumini-Anuhansi.Library-Management-System&left_text=Views"/>
+</div>
+
 ## Project structure
 
 ```
